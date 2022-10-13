@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elementos Compuestos</title>
+</head>
+
+<body>
+  <h1>Explicacion de elementos compuestos LaunchX</h1>
+
+  <!-- Labels / Etiquetas -->
+  <label for="Input1">Ejemplo de input de texto</label>
+  <br>
+  <!-- Entradas / Inputs -->
+  <input type="text" id="Input1" name="Input1" value="Hola explorers">
+  <br><br>
+
+  <hr>
+
+  <!-- Tipos de inputs -->
+  <h2>Input de Texto</h2>
+  <label for="correo1">Input correo</label><br>
+  <input type="email" name="correo1" id="correo1" placeholder="email@doman.com"><br><br>
+
+  <label for="numero1">Inpunt de numero</label><br>
+  <input type="number" name="numero1" id="numero1"><br><br>
+
+  <label for="psw1">Input de password</label><br>
+  <input type="password" name="psw1" id="psw1"> <br><br>
+
+  <label for="tel1">Input de telefono</label><br>
+  <input type="tel" name="tel1" id="tel1" maxlength="10"><br><br>
+
+  <label for="url1">Input de URL</label><br>
+  <input type="url" name="url1" id="url1"><br><br>
+
+  <hr>
+
+  <h2>Input de seleccion multiple</h2><br>
+  <input type="checkbox" name="topping1" id="topping1" value="Chispas">
+  <label for="topping1">Chispas de chocolate</label><br>
+  <input type="checkbox" name="topping2" id="topping2" value="Nuez">
+  <label for="topping2">Nuez</label><br>
+  <input type="checkbox" name="topping3" id="topping3" value="Fresas">
+  <label for="topping3">Fresas</label><br><br>
+
+  <h2>Input de seleccion unica</h2>
+  <input type="radio" name="salsas" id="roja" value="Roja">
+  <label for="roja">Roja</label><br>
+  <input type="radio" name="salsas" id="verde" value="Verde">
+  <label for="verde">Verde</label><br>
+  <input type="radio" name="salsas" id="guacamole" value="Guacamole">
+  <label for="guacamole">Guacamole</label><br>
+  <input type="radio" name="salsas" id="cacahuate" value="Cacahuate">
+  <label for="cacahuate">Cacahuate</label><br><br>
+
+  <h2>Select</h2>
+  <label for="tacos">De que la orden</label>
+  <select id="tacos" name="tacos">
+    <option value="suadero">Suadero</option>
+    <option value="pastor">Pastor</option>
+    <option value="campechanos">Campechanos</option>
+    <option value="tripa">Tripa</option>
+    <option value="vegetariano">Vegetariano</option>
+  </select>
+
+  <h2>Select con input</h2>
+  <label for="refresco">Elige tu refresco favorito</label><br>
+  <input list="refresco">
+  <datalist id="refresco">
+    <option value="Coca-Cola">
+    <option value="Manzana">
+    <option value="Naranja">
+    <option value="Mango">
+    <option value="Guayaba">
+  </datalist>
+  <br><br>
+
+  <hr>
+
+  <h2>Input de fecha</h2>
+  <input type="date" name="fecha1" id="fecha1"><br>
+  <input type="datetime-local" name="fecha2" id="fecha2"><br>
+  <input type="week" name="fecha3" id="fecha3"><br>
+  <input type="time" name="fecha4" id="fecha4"><br>
+  <input type="month" name="fecha5" id="fecha5"><br><br>
+
+  <hr>
+
+  <h2>Input de archivo</h2>
+  <input type="file" name="archivo1" id="archivo1" multiple size="2mb"><br><br>
+
+  <h2>Input de color</h2>
+  <input type="color" name="color1" id="color1"><br><br>
+
+  <h2>Input de rango</h2>
+  <label for="vol">Volumen entre 0 y 500</label><br>
+  <input type="range" id="vol" name="vol" min="0" max="500"><br>
+
+  <hr>
+
+  <h2>Input de boton</h2>
+  <input type="reset"><br>
+  <input type="submit"><br>
+  <input type="button" id="boton1" name="boton1" value="Boton 1" onclick="alert('Bienvenidos explorers')"><br>
+  <button>Boton 2</button><br><br>
+  <hr>
+  <!-- Formularios -->
+  <h2>Ejemplo de formulario</h2>
+  <form action="/accion.js" id="form1" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"><br><br>
+    <input type="submit" value="Submit">
+    <input type="reset">
+  </form>
+
+  <label for="apellido">Apellido:</label>
+  <input type="text" name="apellido" id="apellido" form="form1">
+
+</body>
+
+</html>
