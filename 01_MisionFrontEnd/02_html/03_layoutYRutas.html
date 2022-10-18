@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout y Rutas</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Estilo de header */
+    header {
+      background-color: #666;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    /* Crear 2 columnas con la misma posición en la fila */
+    nav {
+      float: left;
+      width: 30%;
+      height: 300px;
+      /* only for demonstration, should be removed */
+      background: #ccc;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #f1f1f1;
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Estilo de footer */
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 600px) {
+
+      nav,
+      article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>Ciudades</h2>
+    <h4>Mas bonitas</h4>
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <li><a href="#">Londres</a></li>
+        <li><a href="#">Paris</a></li>
+        <li><a href="#">Tokyo</a></li>
+        <li><a href="#">Nueva York</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <h1>Londres</h1>
+      <p>Londes es la capital de Inglaterra y es la ciudad mas popular del Reino Unido, es la ciudad mas poblada con 13
+        millones de habitantes en su area metropolitana</p>
+      <img
+        src="https://media.istockphoto.com/photos/red-telephone-booth-in-front-of-the-illuminated-big-ben-clocktower-in-picture-id1297173828?b=1&k=20&m=1297173828&s=170667a&w=0&h=5XEKaOGrE65HfzC-9akR59h_loGF5T5S6z3a8nklJoM="
+        alt="london" />
+    </article>
+  </section>
+
+  <footer>
+    <p>Footer</p>
+  </footer>
+
+</body>
+
+</html>
