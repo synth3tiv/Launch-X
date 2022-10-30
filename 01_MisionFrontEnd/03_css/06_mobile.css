@@ -1,0 +1,40 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+background-color: blue;
+height: 400px;
+}
+.container-div{
+  background-color: red;
+  width: 200px;
+  height: 200px;
+}
+.parrafo{
+  font-size: 15px;
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+.container{
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-div{
+height: 250px;
+background-color: orange;
+}
+.parrafo{
+  text-align: center;
+}
+}
+@media (max-width: 900px) and (min-width: 600px){
+  .container{
+    background-color: pink;
+  }
+  .parrafo{
+    font-size:20px;
+    font-weight: 200;
+  }
+}
