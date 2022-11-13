@@ -63,6 +63,7 @@ console.log("Bye");
 //   console.log("Hubo un error: " + error);
 // }
 
+/*
 const preguntar = (pregunta) => {
   let respuesta = prompt(pregunta);
   respuesta = respuesta.toLocaleLowerCase();
@@ -85,3 +86,35 @@ try {
 } catch (error) {
   console.log("Hubo un error: ", error);
 }
+*/
+
+//Asincrono
+setTimeout(() => console.log("Tick"), 500);
+
+let fifteen = Promise.resolve(15);
+fifteen.then(value => console.log(`Got ${value}`));
+
+const promesa = () =>
+  new Promise((resolve, reject) =>
+    setTimeout(
+      () => (resolve(console.log('Todo cool')), reject(new Error('oops'))),
+      2000
+    )
+  )
+
+async function main() {
+  //   promesa()
+  //     .then(() => {
+  //       promesa()
+  //         .then(() => console.log('hola'))
+  //         .catch((err) => console.error(err))
+  //     })
+  //     .catch((err) => console.error(err))
+
+  await promesa();
+  console.log('Aquí termina la primer promesa');
+  await promesa();
+  console.log('Aquí termina la segunda promesa');
+}
+
+main();
