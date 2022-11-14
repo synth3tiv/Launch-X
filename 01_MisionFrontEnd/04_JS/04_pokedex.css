@@ -1,0 +1,32 @@
+.pokedex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: red;
+  width: 400px;
+  height: 200px;
+}
+
+.image {
+  width: 100px;
+}
+
+.pokePhoto {
+background-color: white;
+border: black solid;
+border-radius: 5px;
+max-width: 180px;
+}
+
+.pokeInfo {
+display: flex;
+flex-direction: column;
+}
+
+.pokeScreen {
+  background-color: grey;
+  color: white;
+  font-size: 12px;
+  width: 150px;
+  height: 100px;
+}
